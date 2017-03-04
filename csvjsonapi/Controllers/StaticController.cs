@@ -21,7 +21,7 @@ namespace csvjsonapi.Controllers
         [Route("{jsonfile}")]
         public object Get(string jsonfile)
         {
-            string path = @"~\data\" + jsonfile + ".json";
+            string path = @"D:\home\site\wwwroot\data\" + jsonfile + ".json"; //TODO: make this a relative path or pulled from configuration
             string allText = System.IO.File.ReadAllText(path);
 
             object jsonObject = JsonConvert.DeserializeObject(allText);
