@@ -1,0 +1,1 @@
+This only hosts static json files from the file system currently. More planned but not developed. :)
